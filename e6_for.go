@@ -34,6 +34,12 @@ func main() {
 		fmt.Println(cantando)
 	}
 	cantando += "ganzo!!!"
-	fmt.Println(cantando)
+	fmt.Print(cantando)
+
+	fmt.Println("\nfor: iterador de valores")
+	strings := []string{"hola", "mundo", "como", "estas?"}
+	for i, s := range strings {
+		fmt.Println(i, " ", s)
+	}
 
 }
