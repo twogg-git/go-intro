@@ -42,15 +42,25 @@ func main() {
 		fmt.Println(i, " ", s)
 	}
 
+	fmt.Println("for: continue para saltar iteraciones")
 	sum := 0
 	for t := 1; t < 5; t++ {
 		if t%2 != 0 { // omite numeros impares
 			continue // salta esta ejecución
 
 		}
-		// break terminaria el for completo
 		sum += t
 	}
 	fmt.Println(sum) // 6 (2+4)
 
+	fmt.Println("for: break en un loop sin validacion")
+	sumTill100 := 0
+	for {
+		sumTill100++
+		// sin el if el for sera infinito
+		if sumTill100 == 100 {
+			break
+		}
+	}
+	fmt.Println(sumTill100)
 }
