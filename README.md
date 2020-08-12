@@ -93,6 +93,14 @@ func main() {
 }
 ```
 
+## Estructuras: Structs
+```sh
+strings := []string{"hello", "world"}
+for i, s := range strings {
+	fmt.Println(i, " ", s)
+}
+````
+
 ##  Estructuras: Switch
 ```sh
   switch operatingSystem { 

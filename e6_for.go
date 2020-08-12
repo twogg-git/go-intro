@@ -42,4 +42,15 @@ func main() {
 		fmt.Println(i, " ", s)
 	}
 
+	sum := 0
+	for t := 1; t < 5; t++ {
+		if t%2 != 0 { // omite numeros impares
+			continue // salta esta ejecución
+
+		}
+		// break terminaria el for completo
+		sum += t
+	}
+	fmt.Println(sum) // 6 (2+4)
+
 }
